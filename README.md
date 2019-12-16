@@ -1,4 +1,4 @@
-# Azure project uptime monitoring
+# Azure uptime monitoring
 
 Provides uptime monitoring for an Azure project.
 
