@@ -28,7 +28,7 @@ resource "azurerm_application_insights_web_test" "uptimez" {
   application_insights_id = data.azurerm_application_insights.zone.id
   kind                    = "ping"
   frequency               = 300
-  timeout                 = replace(var.uptime_timeouts[count.index], "s", "")
+  timeout                 = var.uptime_timeouts[count.index]
   enabled                 = true
   geo_locations           = ["us-ca-sjc-azr", "emea-nl-ams-azr", "emea-gb-db3-azr"]
 
